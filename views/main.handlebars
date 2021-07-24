@@ -15,32 +15,32 @@
 <body>
 
     <header>
-        <nav class="flex-container">
-            <h1 id="title">
-                <a href="/" id="title">tech-blog</a>
-            </h1>
-            {{#if loggedIn}}
+        <div class="container">
+            <nav>
 
-            <form>
-                <label for="userSearchForm">Search for a user</label>
-                <input type="text" id="user-search" />
-                <button type="submit" id="search-btn">Search!</button>
-            </form>
+                <h1 id="title">
+                    <a href="/" id="title">tech-blog</a>
+                </h1>
 
-            <div id="loggedInNavBtns">
-                <a class="btn" href="/profile" id="profPageNavLink">Profile Page</a>
-                <a class="btn" href="/" id="moviesNavLink">Movies</a>
-                <a class="btn" id="logout">logout</a>
-            </div>
+                {{#if loggedIn}}
 
-            {{else}}
-            <div id="loggedOutNavBtns">
-                <a href="/" class="btn">Movies</a>
-                <a href="/login" class="btn">Login or Sign Up!</a>
-            </div>
-            {{/if}}
+                <div id="loggedInNavLinks">
+                    <a href="/" id="homeLink">Home</a>
+                    <a href="/dashboard" id="moviesNavLink">Dashboard</a>
+                    <a id="logout">Logout</a>
+                </div>
 
-        </nav>
+                {{else}}
+                <div id="loggedOutNavLinks">
+                    <a href="/" id="homeLink">Home</a>
+                    <a href="/dashboard" id="moviesNavLink">Dashboard</a>
+                    <a id="login">Log In</a>
+                </div>
+
+                {{/if}}
+
+            </nav>
+        </div>
     </header>
 
 
