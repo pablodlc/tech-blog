@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
             'id',
             'title',
             'created_at',
-            'post_text'
+            'post_url'
         ],
         order: [['created_at', 'DESC']],
         include: [
@@ -45,7 +45,7 @@ router.get('/:id', (req, res) => {
             'id',
             'title',
             'created_at',
-            'post_text'
+            'post_url'
         ],
         include: [
             {
@@ -81,7 +81,7 @@ router.post('/', (req, res) => {
     if (req.session) {
         Post.create({
             title: req.body.title,
-            post_text: req.body.post_text,
+            post_url: req.body.post_url,
             user_id: req.session.user_id
         })
             .then(dbPostData => res.json(dbPostData))
