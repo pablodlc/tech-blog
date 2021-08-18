@@ -22,22 +22,19 @@
                     <a href="/" id="title">tech-blog</a>
                 </h1>
 
-                {{#if loggedIn}}
-
-                <div id="loggedInNavLinks">
-                    <a href="/" id="homeLink">Home</a>
-                    <a href="/dashboard" id="moviesNavLink">Dashboard</a>
-                    <a id="logout">Logout</a>
+                <div class="buttons">
+                    {{#if loggedIn}}
+                    <button id="logout" class="button is-danger">Logout</button>
+                    <a href="/dashboard" id="dashboard" class="button is-info">Dashboard</a>
+                    {{else}}
+                    <a class="button is-info" id="signup-modal">
+                        <strong>Sign up</strong>
+                    </a>
+                    <a class="button is-light login-btn" id="login-modal-btn">
+                        Log in
+                    </a>
+                    {{/if}}
                 </div>
-
-                {{else}}
-                <div id="loggedOutNavLinks">
-                    <a href="/" id="homeLink">Home</a>
-                    <a href="/dashboard" id="moviesNavLink">Dashboard</a>
-                    <a id="login">Log In</a>
-                </div>
-
-                {{/if}}
 
             </nav>
         </div>

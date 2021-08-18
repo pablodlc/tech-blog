@@ -2,22 +2,18 @@
 
 ## Description
 
-To visit the deployed application, click this link: [**tech-blog**](https://tech-blog-pablodlc.herokuapp.com/).
+To visit the deployed application, click this link: [**tech-blog**](https://techblog-pablodlc.herokuapp.com/).
 
-**tech-blog** is...
-
-Or watch the gif below!  
-![tech-blog](./assets/tech-blog.gif)
+**tech-blog** is a study in the **M**odel **V**iew **C**ontroller ("**MVC**") Paradigm. The Models being `Comment.js`, `Post.js`, and `User.js`, each of which handling their namesake's data structure. I utilized Handlebars.js to handle the Views, making some pages and partials to render the page. Controllers have their own eponymous folder containing the routes necessary for the blog.
 
 This application was written following the guidelines laid out in the provided [User Story](#User%20Story) and [Acceptance Criteria](#Acceptance%20Criteria).
 
 ### Table of Contents
 
--   [User Story](#user%20story)
--   [Acceptance Criteria](#acceptance%20criteria)
+-   [User Story](#user-story)
+-   [Acceptance Criteria](#acceptance-criteria)
 -   [Installation](#installation)
--   [Usage](#usage)
--   [Future Developments](#future%20developments)
+-   [Future Developments](#future-developments)
 -   [Questions?](#questions)
 
 #### User Story
@@ -63,6 +59,22 @@ This application was written following the guidelines laid out in the provided [
 > THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 
 ## Installation
+
+Clone tech-blog's repository from GitHub located here [pablodlc/tech-blog](https://github.com/pablodlc/tech-blog).  
+Or enter this command in the folder on your device where you would like to store **tech-blog**:
+
+```css
+git clone https://github.com/pablodlc/tech-blog.git
+```
+
+After successfully cloning tech-blog on your device, run npm i in the terminal at the root of the application. This will install the dependencies that can be found in the package.json file. Below is an image of the dependencies in package.json:  
+![dependencies](./public/images/dependencies.jpg)
+
+## Future Developments
+
+Clearly this application has room for improvement. The primary actions would be to finish the project following the specifications from the _Acceptance Criteria_. Once the application meets the MVP, I would personalize the app with a color scheme and a stylistic theme to the elements--something like consistent `border-radius` styles on elements on the page and changing the `text-families`.
+
+## Questions
 
 Please feel free to contact me with any questions or comments, or visit my GitHub to see more of my work.  
 [Contact me by email](mailto:pablodlc@gmail.com)  
